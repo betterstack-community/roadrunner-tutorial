@@ -1,0 +1,13 @@
+services:
+  vault:
+    container_name: vault
+    image: hashicorp/vault:1.16.1
+    ports:
+      - 8200:8200
+  flipt:
+    container_name: flipt
+    image: flipt/flipt:v1.39.2
+    ports:
+      - 8100:8080
+    environment:
+      - FLIPT_AUTHENTICATION_METHODS_TOKEN_ENABLED=true

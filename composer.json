@@ -1,0 +1,19 @@
+{
+    "name": "demo/project",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Demo\\Project\\": "src/"
+        }
+    },
+    "require": {
+        "psr/http-server-handler": "^1.0",
+        "nyholm/psr7": "^1.8",
+        "nyholm/psr7-server": "^1.1",
+        "laminas/laminas-httphandlerrunner": "^2.10",
+        "spiral/roadrunner-worker": "^3.5",
+        "spiral/roadrunner-http": "^3.5",
+        "csharpru/vault-php": "^4.4",
+        "flipt-io/flipt": "^1.0"
+    }
+}
